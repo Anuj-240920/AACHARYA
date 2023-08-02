@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          
+          font-family: Arial;
+          font-size: 17px;
+        }
+        
+        #myVideo {
+         
+          
+          width: 90%;
+          height: 80%;
+          object-fit: cover;
+        }
+        .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        }
+
+        .text-overlay h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        }
+
+        .text-overlay p {
+        font-size: 18px;
+        }
+        .video-container {
+        width: 105vw;
+        height: 450px;
+        }
+        
+        
+        </style>
+        </head>
+        <body>
+        <div class="video-container">
+            <video autoplay muted loop id="myVideo">
+            <source src="abcd.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="text-overlay">
+            <h1>Sample Text</h1>
+            <p>This is an example of text overlaid on a video.</p>
+          </div>
+        
+        <div class="content">
+          <h1>Heading</h1>
+          <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+          
+        </div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam molestiae odit quaerat veritatis vitae aliquid eligendi nostrum? Quisquam quam inventore officia ratione quo tempore iste repellat ad temporibus labore? Vero.</div>
+        
+       
+    
+</body>
+</html>

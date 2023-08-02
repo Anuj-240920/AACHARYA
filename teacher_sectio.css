@@ -1,0 +1,233 @@
+/* Margin Padding Reset*/
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+}
+/* text-decoration Reset from a tag*/
+
+a {
+    text-decoration: none;
+    color: rgb(18, 18, 41);
+}
+
+
+/* Navbar Css for PC */
+
+.navbar {
+    /* border: 5px solid blue; */
+    display: flex;
+    overflow: auto;
+    position: fixed;
+    justify-content: space-between;
+    width: 100vw;
+    background: linear-gradient(rgb(36, 56, 110), rgb(30, 43, 87), rgb(29, 29, 29));
+}
+
+/* style for Ul tag in nav bar */
+.navbar ul {
+    /* border: 3px solid red; */
+    list-style: none;
+    display: flex;
+    width: 50vw;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 10px;
+    padding: 5px 0px;
+    float: right;
+    align-items: center;
+}
+
+/* Style for li tag in navbar */
+.navbar ul li {
+    /* border: 2px solid brown; */
+    margin: 5px 0px;
+}
+
+/* Style for a tag */
+.navbar a {
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 5px 8px;
+}
+
+.navbar a:hover {
+    color: rgb(29, 0, 110);
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+/* style for logo (ADIT) */
+.logo {
+    display: inline;
+    width: 25vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 35px;
+    padding: 4px 0px;
+    letter-spacing: 1.5vw;
+    color: rgb(255, 242, 229);
+    background-color: rgb(0, 119, 255);
+    text-shadow: 4px 2px 3px rgba(4, 49, 100, 0.849);
+}
+
+/* menu (open) toggle buttons */
+.menubtn{
+    display: none; 
+}
+/* menu (close) toggle button */
+.mclsbtn{
+    display: none;
+}
+
+/* media query for small screen devices */
+
+/* for tab screen */
+
+@media only screen and (max-width: 825px) {
+    .navbar {
+        /* border: 5px solid blue; */
+        overflow: auto;
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        background: linear-gradient(rgb(36, 56, 110), rgb(30, 43, 87), rgb(29, 29, 29));
+    }
+
+    .navbar ul {
+        /* border: 3px solid red; */
+        list-style: none;
+        display: flex;
+        overflow: auto;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5px 0px;
+        float: right;
+    }
+
+    .navbar ul li {
+        /* border: 2px solid brown; */
+        margin: 5px 0px;
+    }
+
+    .navbar a {
+        color: aliceblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+        padding: 5px 8px;
+    }
+
+    .navbar a:hover {
+        color: rgb(29, 0, 110);
+        background-color: antiquewhite;
+        border-radius: 5px;
+    }
+
+    /* tab screen query close here */
+
+    /* mobile screen query starts here */
+
+    @media only screen and (max-width: 640px) {
+        .navbar {
+            display: flex;
+            border: 0px solid blue;
+            width: 100vw;
+            background: linear-gradient(rgba(67, 115, 248, 0.753), rgb(9, 18, 49), rgb(0, 0, 0));
+            overflow:visible;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .menubtn{
+            display: inline;
+            font-size: 35px;
+            color: aliceblue;
+            float: right;
+            position: absolute;
+            right: 15px;
+            padding: 5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .mclsbtn{
+            display: none;
+            font-size: 35px;
+            color: aliceblue;
+            float: right;
+            position: absolute;
+            right: 15px;
+            padding: 5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .menubtn:hover{
+            background-color: #fff8d8;
+            color: black;
+            border-radius: 8px;
+            
+        }
+        .mclsbtn:hover{
+            background-color: #fff8d8;
+            color: black;
+            border-radius: 8px;
+            padding: 0px 8px;
+            
+        }
+
+        .logo {
+            border: 0px solid green;
+            background-color: rgb(0, 119, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 35px;
+            padding: 4px 0px;
+            letter-spacing: 1.5vw;
+            color: rgb(255, 242, 229);
+            text-shadow: 4px 2px 3px rgba(4, 49, 100, 0.849);
+            width: fit-content;
+            padding: 5px 18px;
+            }
+
+        .navbar ul {
+            border: 0px solid red;
+            display: inline;
+            width: 100%;
+            margin: 5px 0px;
+            float: left;
+            position: absolute;
+            height: 40vh;
+            background: linear-gradient(#0a1a24, rgb(26, 81, 112));
+            top: 44px;
+            left: 655px;
+            transition: all 0.7s;
+        }
+
+        .navbar ul li {
+            border: 0px solid brown;
+            margin: 0px 0px;
+        }
+
+        .navbar a {
+            display: block;
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            font-size: 18px;
+            padding: 25px 8px;
+            text-align: center;
+            border-radius: 15px;
+            
+        }
+
+        .navbar a:hover {
+            color: rgb(29, 0, 110);
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+    }
+    /* mobile screen query close here */
+}

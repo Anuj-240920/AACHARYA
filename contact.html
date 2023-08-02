@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Website</title>
+    <link rel="stylesheet" href="footer.css" type="text/css">
+    <!-- link for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- link for -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+
+
+        /* Margin Padding Reset*/
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: rgb(252, 217, 175);
+        }
+        /* text-decoration Reset from a tag*/
+
+        a {
+            text-decoration: none;
+            color: rgb(18, 18, 41);
+        }
+
+        
+        /* Navbar Css for PC */
+
+        .navbar {
+            /* border: 5px solid blue; */
+            display: flex;
+            overflow: auto;
+            position: fixed;
+            justify-content: space-between;
+            width: 100vw;
+            background: linear-gradient(90deg, #86e3ce, #d0e6a5);
+        }
+
+        /* style for Ul tag in nav bar */
+        .navbar ul {
+            /* border: 3px solid red; */
+            list-style: none;
+            display: flex;
+            width: 50vw;
+            overflow: auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0px 10px;
+            padding: 5px 0px;
+            float: right;
+            align-items: center;
+        }
+
+        /* Style for li tag in navbar */
+        .navbar ul li {
+            /* border: 2px solid brown; */
+            margin: 5px 0px;
+        }
+
+        /* Style for a tag */
+        .navbar a {
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            padding: 5px 8px;
+        }
+
+        .navbar a:hover {
+            color: rgb(29, 0, 110);
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+
+        /* style for logo (ADIT) */
+        .logo {
+            display: inline;
+            width: 25vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 35px;
+            padding: 4px 0px;
+            letter-spacing: 1.5vw;
+            color: rgb(255, 242, 229);
+            background-color: rgb(229, 241, 255);
+            text-shadow: 4px 2px 3px rgba(4, 49, 100, 0.849);
+        }
+
+        /* menu (open) toggle buttons */
+        .menubtn{
+            display: none; 
+        }
+        /* menu (close) toggle button */
+        .mclsbtn{
+            display: none;
+        }
+
+        /* media query for small screen devices */
+
+        /* for tab screen */
+
+        @media only screen and (max-width: 825px) {
+            .navbar {
+                /* border: 5px solid blue; */
+                overflow: auto;
+                position: fixed;
+                width: 100vw;
+                display: flex;
+                background: linear-gradient(rgb(36, 56, 110), rgb(30, 43, 87), rgb(29, 29, 29));
+            }
+
+            .navbar ul {
+                /* border: 3px solid red; */
+                list-style: none;
+                display: flex;
+                overflow: auto;
+                width: auto;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 5px 0px;
+                float: right;
+            }
+
+            .navbar ul li {
+                /* border: 2px solid brown; */
+                margin: 5px 0px;
+            }
+
+            .navbar a {
+                color: aliceblue;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 900;
+                font-size: 18px;
+                padding: 5px 8px;
+            }
+
+            .navbar a:hover {
+                color: rgb(29, 0, 110);
+                background-color: antiquewhite;
+                border-radius: 5px;
+            }
+
+            /* tab screen query close here */
+
+            /* mobile screen query starts here */
+
+            @media only screen and (max-width: 640px) {
+                .navbar {
+                    display: flex;
+                    border: 0px solid blue;
+                    width: 100vw;
+                    background: linear-gradient(rgba(67, 115, 248, 0.753), rgb(9, 18, 49), rgb(0, 0, 0));
+                    overflow:visible;
+                    align-items: center;
+                    justify-content: space-between;
+
+                }
+                .menubtn{
+                    display: inline;
+                    font-size: 35px;
+                    color: aliceblue;
+                    float: right;
+                    position: absolute;
+                    right: 15px;
+                    padding: 5px;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+                .mclsbtn{
+                    display: none;
+                    font-size: 35px;
+                    color: aliceblue;
+                    float: right;
+                    position: absolute;
+                    right: 15px;
+                    padding: 5px;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                .menubtn:hover{
+                    background-color: #fff8d8;
+                    color: black;
+                    border-radius: 8px;
+                    
+                }
+                .mclsbtn:hover{
+                    background-color: #fff8d8;
+                    color: black;
+                    border-radius: 8px;
+                    padding: 0px 8px;
+                    
+                }
+
+                .logo {
+                    border: 0px solid green;
+                    background-color: rgb(0, 119, 255);
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    text-align: center;
+                    font-size: 35px;
+                    padding: 4px 0px;
+                    letter-spacing: 1.5vw;
+                    color: rgb(255, 242, 229);
+                    text-shadow: 4px 2px 3px rgba(4, 49, 100, 0.849);
+                    width: fit-content;
+                    padding: 5px 18px;
+                    }
+
+                .navbar ul {
+                    border: 0px solid red;
+                    display: inline;
+                    width: 100%;
+                    margin: 5px 0px;
+                    float: left;
+                    position: absolute;
+                    height: 40vh;
+                    background: linear-gradient(#0a1a24, rgb(26, 81, 112));
+                    top: 44px;
+                    left: 655px;
+                    transition: all 0.7s;
+                }
+
+                .navbar ul li {
+                    border: 0px solid brown;
+                    margin: 0px 0px;
+                }
+
+                .navbar a {
+                    display: block;
+                    color: aliceblue;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 900;
+                    font-size: 18px;
+                    padding: 25px 8px;
+                    text-align: center;
+                    border-radius: 15px;
+                    
+                }
+
+                .navbar a:hover {
+                    color: rgb(29, 0, 110);
+                    background-color: antiquewhite;
+                    border-radius: 5px;
+                }
+            }
+            /* mobile screen query close here */
+        }
+    </style>
+    <style>.container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      /* Header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+      }
+      
+      /* Hero section */
+      .hero {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 50px 0;
+      }
+      
+      /* Mission section */
+      .mission {
+        background-color: #fff;
+        padding: 50px 0;
+      }
+      
+      /* Team section */
+      .team {
+        background-color: #f2f2f2;
+        padding: 50px 0;
+      }
+      
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }</style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <svg width="306.79999999999995" height="75.69771640216716" viewBox="0 0 369.66666666666674 93.32330997214308" class="css-1j8o68f"><defs id="SvgjsDefs1846"></defs><g id="SvgjsG1847" featurekey="rZF8Vg-0" transform="matrix(1.581916915025462,0,0,1.581916915025462,-3.9547885159798235,-3.9547794641786282)" fill="#0081c6"><title xmlns="http://www.w3.org/2000/svg">1</title><path xmlns="http://www.w3.org/2000/svg" d="M32,16.5H56.24a1.49861,1.49861,0,0,1,1.3.75,29.56871,29.56871,0,0,1,3.03,7.37,1.57067,1.57067,0,0,1-.26005,1.3,1.5914,1.5914,0,0,1-1.19.58H32A5.50968,5.50968,0,0,0,26.5,32,1.498,1.498,0,0,1,25,33.5H18A1.498,1.498,0,0,1,16.5,32,15.51337,15.51337,0,0,1,32,16.5Z"></path><path xmlns="http://www.w3.org/2000/svg" d="M32,47.5H7.76a1.49874,1.49874,0,0,1-1.3-.75,29.57057,29.57057,0,0,1-3.03-7.37,1.47647,1.47647,0,0,1,.12-1.06,1.51388,1.51388,0,0,1,1.33-.82H32A5.50972,5.50972,0,0,0,37.5,32,1.498,1.498,0,0,1,39,30.5h7A1.498,1.498,0,0,1,47.5,32,15.51337,15.51337,0,0,1,32,47.5Z"></path><path xmlns="http://www.w3.org/2000/svg" d="M4,33.5A1.498,1.498,0,0,1,2.5,32,29.48784,29.48784,0,0,1,51.49,9.87,1.54256,1.54256,0,0,1,52,11.13a1.51761,1.51761,0,0,1-1.5,1.37H32A19.52509,19.52509,0,0,0,12.5,32,1.498,1.498,0,0,1,11,33.5Z"></path><path xmlns="http://www.w3.org/2000/svg" d="M61.5,32c.07664,25.20862-30.16446,38.86111-48.99012,22.12964A1.50835,1.50835,0,0,1,12.31,52.09a1.49265,1.49265,0,0,1,1.19-.59H32A19.52509,19.52509,0,0,0,51.5,32,1.498,1.498,0,0,1,53,30.5h7A1.498,1.498,0,0,1,61.5,32Z"></path></g><g id="SvgjsG1848" featurekey="6VBqdG-0" transform="matrix(2.2685759710019155,0,0,2.2685759710019155,112.09256831350964,7.8422567720097245)" fill="#48466d"><path d="M12.46 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M4.82 15.219999999999999 l5.56 0 l-2.78 -6.44 z M27.660000000000004 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M20.020000000000003 15.219999999999999 l5.56 0 l-2.78 -6.44 z M43.24 18.5 c-1.26 1.1 -2.9 1.7 -4.72 1.7 c-3.76 0 -7.22 -2.96 -7.22 -7.2 s3.46 -7.2 7.22 -7.2 c1.8 0 3.42 0.6 4.66 1.66 l-1.34 1.52 c-0.88 -0.68 -2.02 -1.1 -3.18 -1.1 c-2.72 0 -5.08 2.12 -5.08 5.12 s2.36 5.12 5.08 5.12 c1.18 0 2.36 -0.44 3.24 -1.16 z M53.82000000000001 6 l2.2 0 l0 14 l-2.2 0 l0 -5.92 l-6.48 0 l0 5.92 l-2.2 0 l0 -14 l2.2 0 l0 6.04 l6.48 0 l0 -6.04 z M69.68 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M62.040000000000006 15.219999999999999 l5.56 0 l-2.78 -6.44 z M84.22 20 l-2.36 0 l-3.3 -4.88 l-0.24 0 l-2.5 0 l0 4.88 l-2.2 0 l0 -14 l4.7 0 c3.14 0 5.06 1.92 5.06 4.62 c0 1.96 -1.02 3.46 -2.78 4.12 z M75.82000000000001 8.04 l0 5.16 l2.4 0 c1.78 0 2.96 -0.84 2.96 -2.58 s-1.18 -2.58 -2.96 -2.58 l-2.4 0 z M98.14000000000001 6 l-5.26 7.76 l0 6.24 l-2.2 0 l0 -6.24 l-5.26 -7.76 l2.5 0 l3.86 5.76 l3.86 -5.76 l2.5 0 z M111.20000000000002 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M103.56 15.219999999999999 l5.56 0 l-2.78 -6.44 z"></path></g><g id="SvgjsG1849" featurekey="rMoqOW-0" transform="matrix(0.5523335735898655,0,0,0.5523335735898655,147.33719942198167,60.79646516782951)" fill="#0081c6"><path d="M9.92 8.38 l-6.02 0 l0 3.46 l4.96 0 l0 2.24 l-4.96 0 l0 5.92 l-2.7 0 l0 -14 l8.72 0 l0 2.38 z M28.28 6 l0 14 l-2.62 0 l0 -14 l2.62 0 z M53.82 6 l2.62 0 l0 14 l-2 0 l-7.3 -9.22 l0 9.22 l-2.62 0 l0 -14 l2.02 0 l7.28 9.24 l0 -9.24 z M77.48 6 c4 0 7.08 3.1 7.08 6.94 c0 3.96 -3.08 7.06 -7.08 7.06 l-4.8 0 l0 -14 l4.8 0 z M77.46000000000001 17.52 c2.84 0 4.44 -2.06 4.44 -4.58 c0 -2.4 -1.6 -4.46 -4.44 -4.46 l-2.16 0 l0 9.04 l2.16 0 z M101.38000000000001 20.1 c-0.84 0 -1.48 -0.64 -1.48 -1.48 s0.64 -1.48 1.48 -1.48 s1.48 0.64 1.48 1.48 s-0.64 1.48 -1.48 1.48 z M127.22 6 l2.62 0 l0 14 l-2.62 0 l0 -5.76 l-6 0 l0 5.76 l-2.62 0 l0 -14 l2.62 0 l0 5.82 l6 0 l0 -5.82 z M148.7 6 l0 14 l-2.62 0 l0 -14 l2.62 0 z M175.78 20 l-2.78 0 l-3.12 -4.76 l-0.12 0 l-2.2 0 l0 4.76 l-2.62 0 l0 -14 l4.82 0 c3.14 0 5.12 1.92 5.12 4.7 c0 1.94 -0.96 3.38 -2.6 4.08 z M167.56 8.42 l0 4.56 l2.06 0 c1.58 0 2.64 -0.68 2.64 -2.28 c0 -1.58 -1.06 -2.28 -2.64 -2.28 l-2.06 0 z M194.04 17.58 l6.1 0 l0 2.42 l-6.5 0 l-2.22 0 l0 -14 l2.62 0 l5.92 0 l0 2.42 l-5.92 0 l0 3.36 l4.5 0 l0 2.36 l-4.5 0 l0 3.44 z M217.06 20.1 c-0.84 0 -1.48 -0.64 -1.48 -1.48 s0.64 -1.48 1.48 -1.48 s1.48 0.64 1.48 1.48 s-0.64 1.48 -1.48 1.48 z M247.48 12.64 c0.54 4.66 -2.52 7.56 -6.26 7.56 c-3.92 0 -7.24 -2.96 -7.24 -7.2 s3.4 -7.2 7.24 -7.2 c1.82 0 3.46 0.6 4.68 1.66 l-1.58 1.8 c-0.8 -0.6 -1.86 -1 -2.94 -1 c-2.62 0 -4.68 1.98 -4.68 4.74 s2 4.74 4.52 4.74 c2 0 3.42 -0.8 3.84 -2.86 l-3.48 0 l0 -2.24 l5.9 0 z M274.3 20 l-2.78 0 l-3.12 -4.76 l-0.12 0 l-2.2 0 l0 4.76 l-2.62 0 l0 -14 l4.82 0 c3.14 0 5.12 1.92 5.12 4.7 c0 1.94 -0.96 3.38 -2.6 4.08 z M266.08 8.42 l0 4.56 l2.06 0 c1.58 0 2.64 -0.68 2.64 -2.28 c0 -1.58 -1.06 -2.28 -2.64 -2.28 l-2.06 0 z M296.88 5.800000000000001 c3.84 0 7.24 2.96 7.24 7.2 s-3.4 7.2 -7.24 7.2 s-7.24 -2.96 -7.24 -7.2 s3.4 -7.2 7.24 -7.2 z M296.88 17.740000000000002 c2.44 0 4.5 -1.98 4.5 -4.74 s-2.06 -4.74 -4.5 -4.74 c-2.46 0 -4.52 1.98 -4.52 4.74 s2.06 4.74 4.52 4.74 z M339.16 6 l-4.58 14 l-1.86 0 l-3.42 -9.34 l-3.4 9.34 l-1.86 0 l-4.58 -14 l2.76 0 l2.86 8.84 l3.22 -8.84 l2.02 0 l3.22 8.84 l2.86 -8.84 l2.76 0 z"></path></g></svg>
+        </div>
+        <div id="menu" class="menubtn" onclick="menubtn();">
+            //
+        </div>
+        <div id="menuclose" class="mclsbtn" onclick="mclsbtn();">
+            X
+        </div>
+        <ul id="mul">
+            <li> <a href="index.html">Home</a> </li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="Our_services.html"> Our Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+<!-- content of about us page -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <h2>Contact Form</h2>
+    <form method="post" action="process_form.php">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+
+  <footer class="footer-section">
+    <div >
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span><pre>National Skill Training Institute kanpur ,
+                                 udyog nagar,Kanpur</pre></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <i class="far fa-envelope-open"></i>
+                            <a href="mailto:aacharya@ermks.in">Send Mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><svg width="306.79999999999995" height="75.69771640216716" viewBox="0 0 369.66666666666674 93.32330997214308" class="css-1j8o68f"><defs id="SvgjsDefs1846"></defs><g id="SvgjsG1847" featurekey="rZF8Vg-0" transform="matrix(1.581916915025462,0,0,1.581916915025462,-3.9547885159798235,-3.9547794641786282)" fill="#0081c6"><title xmlns="http://www.w3.org/2000/svg">1</title><path xmlns="http://www.w3.org/2000/svg" d="M32,16.5H56.24a1.49861,1.49861,0,0,1,1.3.75,29.56871,29.56871,0,0,1,3.03,7.37,1.57067,1.57067,0,0,1-.26005,1.3,1.5914,1.5914,0,0,1-1.19.58H32A5.50968,5.50968,0,0,0,26.5,32,1.498,1.498,0,0,1,25,33.5H18A1.498,1.498,0,0,1,16.5,32,15.51337,15.51337,0,0,1,32,16.5Z"></path><path xmlns="http://www.w3.org/2000/svg" d="M32,47.5H7.76a1.49874,1.49874,0,0,1-1.3-.75,29.57057,29.57057,0,0,1-3.03-7.37,1.47647,1.47647,0,0,1,.12-1.06,1.51388,1.51388,0,0,1,1.33-.82H32A5.50972,5.50972,0,0,0,37.5,32,1.498,1.498,0,0,1,39,30.5h7A1.498,1.498,0,0,1,47.5,32,15.51337,15.51337,0,0,1,32,47.5Z"></path><path xmlns="http://www.w3.org/2000/svg" d="M4,33.5A1.498,1.498,0,0,1,2.5,32,29.48784,29.48784,0,0,1,51.49,9.87,1.54256,1.54256,0,0,1,52,11.13a1.51761,1.51761,0,0,1-1.5,1.37H32A19.52509,19.52509,0,0,0,12.5,32,1.498,1.498,0,0,1,11,33.5Z"></path><path xmlns="http://www.w3.org/2000/svg" d="M61.5,32c.07664,25.20862-30.16446,38.86111-48.99012,22.12964A1.50835,1.50835,0,0,1,12.31,52.09a1.49265,1.49265,0,0,1,1.19-.59H32A19.52509,19.52509,0,0,0,51.5,32,1.498,1.498,0,0,1,53,30.5h7A1.498,1.498,0,0,1,61.5,32Z"></path></g><g id="SvgjsG1848" featurekey="6VBqdG-0" transform="matrix(2.2685759710019155,0,0,2.2685759710019155,112.09256831350964,7.8422567720097245)" fill="#48466d"><path d="M12.46 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M4.82 15.219999999999999 l5.56 0 l-2.78 -6.44 z M27.660000000000004 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M20.020000000000003 15.219999999999999 l5.56 0 l-2.78 -6.44 z M43.24 18.5 c-1.26 1.1 -2.9 1.7 -4.72 1.7 c-3.76 0 -7.22 -2.96 -7.22 -7.2 s3.46 -7.2 7.22 -7.2 c1.8 0 3.42 0.6 4.66 1.66 l-1.34 1.52 c-0.88 -0.68 -2.02 -1.1 -3.18 -1.1 c-2.72 0 -5.08 2.12 -5.08 5.12 s2.36 5.12 5.08 5.12 c1.18 0 2.36 -0.44 3.24 -1.16 z M53.82000000000001 6 l2.2 0 l0 14 l-2.2 0 l0 -5.92 l-6.48 0 l0 5.92 l-2.2 0 l0 -14 l2.2 0 l0 6.04 l6.48 0 l0 -6.04 z M69.68 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M62.040000000000006 15.219999999999999 l5.56 0 l-2.78 -6.44 z M84.22 20 l-2.36 0 l-3.3 -4.88 l-0.24 0 l-2.5 0 l0 4.88 l-2.2 0 l0 -14 l4.7 0 c3.14 0 5.06 1.92 5.06 4.62 c0 1.96 -1.02 3.46 -2.78 4.12 z M75.82000000000001 8.04 l0 5.16 l2.4 0 c1.78 0 2.96 -0.84 2.96 -2.58 s-1.18 -2.58 -2.96 -2.58 l-2.4 0 z M98.14000000000001 6 l-5.26 7.76 l0 6.24 l-2.2 0 l0 -6.24 l-5.26 -7.76 l2.5 0 l3.86 5.76 l3.86 -5.76 l2.5 0 z M111.20000000000002 20 l-1.28 -2.96 l-7.16 0 l-1.28 2.96 l-2.34 0 l6.24 -14 l1.92 0 l6.24 14 l-2.34 0 z M103.56 15.219999999999999 l5.56 0 l-2.78 -6.44 z"></path></g><g id="SvgjsG1849" featurekey="rMoqOW-0" transform="matrix(0.5523335735898655,0,0,0.5523335735898655,147.33719942198167,60.79646516782951)" fill="#0081c6"><path d="M9.92 8.38 l-6.02 0 l0 3.46 l4.96 0 l0 2.24 l-4.96 0 l0 5.92 l-2.7 0 l0 -14 l8.72 0 l0 2.38 z M28.28 6 l0 14 l-2.62 0 l0 -14 l2.62 0 z M53.82 6 l2.62 0 l0 14 l-2 0 l-7.3 -9.22 l0 9.22 l-2.62 0 l0 -14 l2.02 0 l7.28 9.24 l0 -9.24 z M77.48 6 c4 0 7.08 3.1 7.08 6.94 c0 3.96 -3.08 7.06 -7.08 7.06 l-4.8 0 l0 -14 l4.8 0 z M77.46000000000001 17.52 c2.84 0 4.44 -2.06 4.44 -4.58 c0 -2.4 -1.6 -4.46 -4.44 -4.46 l-2.16 0 l0 9.04 l2.16 0 z M101.38000000000001 20.1 c-0.84 0 -1.48 -0.64 -1.48 -1.48 s0.64 -1.48 1.48 -1.48 s1.48 0.64 1.48 1.48 s-0.64 1.48 -1.48 1.48 z M127.22 6 l2.62 0 l0 14 l-2.62 0 l0 -5.76 l-6 0 l0 5.76 l-2.62 0 l0 -14 l2.62 0 l0 5.82 l6 0 l0 -5.82 z M148.7 6 l0 14 l-2.62 0 l0 -14 l2.62 0 z M175.78 20 l-2.78 0 l-3.12 -4.76 l-0.12 0 l-2.2 0 l0 4.76 l-2.62 0 l0 -14 l4.82 0 c3.14 0 5.12 1.92 5.12 4.7 c0 1.94 -0.96 3.38 -2.6 4.08 z M167.56 8.42 l0 4.56 l2.06 0 c1.58 0 2.64 -0.68 2.64 -2.28 c0 -1.58 -1.06 -2.28 -2.64 -2.28 l-2.06 0 z M194.04 17.58 l6.1 0 l0 2.42 l-6.5 0 l-2.22 0 l0 -14 l2.62 0 l5.92 0 l0 2.42 l-5.92 0 l0 3.36 l4.5 0 l0 2.36 l-4.5 0 l0 3.44 z M217.06 20.1 c-0.84 0 -1.48 -0.64 -1.48 -1.48 s0.64 -1.48 1.48 -1.48 s1.48 0.64 1.48 1.48 s-0.64 1.48 -1.48 1.48 z M247.48 12.64 c0.54 4.66 -2.52 7.56 -6.26 7.56 c-3.92 0 -7.24 -2.96 -7.24 -7.2 s3.4 -7.2 7.24 -7.2 c1.82 0 3.46 0.6 4.68 1.66 l-1.58 1.8 c-0.8 -0.6 -1.86 -1 -2.94 -1 c-2.62 0 -4.68 1.98 -4.68 4.74 s2 4.74 4.52 4.74 c2 0 3.42 -0.8 3.84 -2.86 l-3.48 0 l0 -2.24 l5.9 0 z M274.3 20 l-2.78 0 l-3.12 -4.76 l-0.12 0 l-2.2 0 l0 4.76 l-2.62 0 l0 -14 l4.82 0 c3.14 0 5.12 1.92 5.12 4.7 c0 1.94 -0.96 3.38 -2.6 4.08 z M266.08 8.42 l0 4.56 l2.06 0 c1.58 0 2.64 -0.68 2.64 -2.28 c0 -1.58 -1.06 -2.28 -2.64 -2.28 l-2.06 0 z M296.88 5.800000000000001 c3.84 0 7.24 2.96 7.24 7.2 s-3.4 7.2 -7.24 7.2 s-7.24 -2.96 -7.24 -7.2 s3.4 -7.2 7.24 -7.2 z M296.88 17.740000000000002 c2.44 0 4.5 -1.98 4.5 -4.74 s-2.06 -4.74 -4.5 -4.74 c-2.46 0 -4.52 1.98 -4.52 4.74 s2.06 4.74 4.52 4.74 z M339.16 6 l-4.58 14 l-1.86 0 l-3.42 -9.34 l-3.4 9.34 l-1.86 0 l-4.58 -14 l2.76 0 l2.86 8.84 l3.22 -8.84 l2.02 0 l3.22 8.84 l2.86 -8.84 l2.76 0 z"></path></g></svg></a>
+                        </div>
+                        <div class="footer-text"></p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about_us.html">about</a></li>
+                            <li><a href="#">services</a></li>
+                            
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about_us.html">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023, All Right Reserved <a href="">Logic legion</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about_us.html">About us</a></li>
+                            <li><a href="admin1_login.php">admin</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- footer close -->
+<!-- script logic for toggle menu in mobile screen -->
+    <script>
+          function  menubtn() {
+           document.getElementById("mul").style.left="0px"
+           document.getElementById("menu").style.display ="none"
+           document.getElementById("menuclose").style.display ="inline"
+          }
+          function mclsbtn(){
+            document.getElementById("mul").style.left="655px"
+            document.getElementById("menuclose").style.display ="none"
+            document.getElementById("menu").style.display ="inline"
+          }
+
+    </script>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>

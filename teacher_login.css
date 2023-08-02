@@ -1,0 +1,109 @@
+.bg{
+    background-image: url(111.jpg);
+    background-color: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 92vh;
+    border: rgb(0, 119, 255);
+    background-blend-mode: color;
+    
+}
+.dddd{
+    color: #2c5765;
+    padding: 30px;
+    font-size: 30px;
+    background-color: rgb(255 255 255 / 60%);
+    /* opacity: 40%; */
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    height: 410px;
+    width: 350px;
+    
+}
+.logocard {
+    background-color: #ffffff87;
+/* backdrop-filter: blur(5px); */
+width: fit-content;
+margin: auto;
+display: flex;
+padding: 8px;
+border-radius: 20px;
+align-items: center;
+justify-content: center;
+}
+form{
+    width: 100%;
+}
+.formcard{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+form input[type=text]{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #6dcfff00;
+    color: #266ead;
+    backdrop-filter: brightness(2.5);
+    margin: 5px auto;
+    width: 90%;
+}
+form input[type=password]{
+    font-size: 30px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #6dcfff00;
+    color: #266ead;
+    backdrop-filter: brightness(2.5);
+    margin: 5px auto;
+}
+form input[type=Submit] {
+    font-size: 22px;
+    margin: 22px auto;
+    padding: 8px 12px;
+    border-radius: 8px;
+    /* width: 80%; */
+    background-color: rgb(27 168 244);
+}
+button{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+img{
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+   
+}
+.sss{
+    margin: auto;
+    align-items: center;
+    
+}
+.sbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.sbtn span {
+    font-size: 22px;
+    margin: 22px auto;
+    /* padding: 8px 12px; */
+    border-radius: 8px;
+    /* border: 2px solid rgb(8 94 164);
+    background-color: rgb(27 168 244); */
+}
+.sbtn span a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid rgb(8 94 164);
+    background-color: rgb(27 168 244);
+}

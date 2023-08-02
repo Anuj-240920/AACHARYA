@@ -1,0 +1,46 @@
+.marquee {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.footer {
+  background: linear-gradient(#0a1a24, rgb(26, 81, 112));
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+ 
+  bottom: 0;
+  width: 100%;
+}
+
+.footer input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.footer .social-icons {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .social-icons li a {
+  color: #666;
+  text-decoration: none;
+  font-size: 20px;
+}

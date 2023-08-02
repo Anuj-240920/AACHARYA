@@ -1,0 +1,67 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-nav button {
+    background-color: #ccc;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-nav button.active {
+    background-color: #555;
+  }.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-nav button {
+    background-color: #ccc;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-nav button.active {
+    background-color: #555;
+  }

@@ -1,0 +1,89 @@
+.bg{
+    background-image: url(111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 92vh;
+    border: rgb(0, 119, 255);
+    
+}
+.dddd{
+    color: antiquewhite;
+    padding: 30px;
+    font-size: 30px;
+    background-color: rgb(75, 55, 55);
+    opacity: 40%;
+    height: 410px;
+    width: 350px;
+    
+}
+input{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+}
+button{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+img{
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+   
+}
+.sss{
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+}.bg{
+    background-image: url(111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 92vh;
+    border: rgb(0, 119, 255);
+    
+}
+.dddd{
+    color: antiquewhite;
+    padding: 30px;
+    font-size: 30px;
+    background-color: rgb(75, 55, 55);
+    opacity: 40%;
+    height: 410px;
+    width: 350px;
+    
+}
+input{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+}
+button{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+img{
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+   
+}
+.sss{
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+}
